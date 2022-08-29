@@ -20,9 +20,9 @@ const reft = {
   countryInfo: document.querySelector('.country-info'),
 };
 
-reft.searcBbox.addEventListener('input', debounce(pole, DEBOUNCE_DELAY));
+reft.searcBbox.addEventListener('input', debounce(field, DEBOUNCE_DELAY));
 
-function pole() {
+function field() {
   const city = reft.searcBbox.value.trim();
   countrySearch(city).then(callКesult).catch(error);
 }
